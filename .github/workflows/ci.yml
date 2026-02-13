@@ -1,9 +1,14 @@
-name: CI de la App
-on: [push]
+name: CI Pull Request
+on:
+  # Ejecución automática en PRs
+  pull_request:
+    branches: [ "main" ]
+  
+  # Ejecución Manual (El botón "Run workflow")
+  workflow_dispatch:
 
 jobs:
-  # Llamada al workflow centralizado
-  CI-PR:
+  call-governance-pipeline:
+    # Recuerda cambiar 'valentechy' por tu usuario
     uses: valentechy/GitHub-Actions-Gobernanza/.github/workflows/ci-pr-pipeline.yml@main
-    with:
-      target-env: 'production'
+    secrets: inherit
