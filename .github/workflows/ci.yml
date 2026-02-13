@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   # Llamada al workflow centralizado
-  call-central-workflow:
-    uses: valentechy/GitHub-Actions-Gobernanza/.github/workflows/ci-pipeline.yml@main
+  CI-PR:
+    uses: valentechy/GitHub-Actions-Gobernanza/.github/workflows/ci-pr-pipeline.yml@main
     with:
       target-env: 'production'
