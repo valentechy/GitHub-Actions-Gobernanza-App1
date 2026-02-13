@@ -1,6 +1,7 @@
 {
   "project_name": "App1-Prueba",
-  "language": "java",
+  "language": "ruby",
   "version": "17",
-  "security_level": "high"
+  "security_level": "high",
+  "campo_estra": "true"
 }
