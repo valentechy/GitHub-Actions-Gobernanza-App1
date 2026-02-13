@@ -1,7 +1,6 @@
 {
   "project_name": "App1-Prueba",
-  "language": "ruby",
+  "language": "dotnet",
   "version": "17",
-  "security_level": "high",
-  "campo_extra": "true"
+  "security_level": "high"
 }
